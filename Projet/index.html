@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MorroZon</title>
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="site">
+        <!-- SMALL MENU BEGAIN -->
+        <div class="ui stackable menu mini inverted black" id="small-menu"
+            style="padding: 0 !important; margin: 0 !important;">
+            <div class="ui container">
+                <div class="left menu">
+                    <div class="item"><a href="#"> <i class="phone volume icon"></i> +0778951080</a></div>
+                    <div class="item"><a href="#"><i class="clock outline icon"></i> De 9h a 21h | 7 jours sur 7</a></div>
+                </div>
+                <div class="right menu">
+                    <div class="item"><a href="index.html">Acceuil</a></div>
+                    <div class="item"><a href="https://mail.google.com/mail/u/0/#inbox">Contact</a></div>
+                    <div class="item"><a href="login.html"><i class="user outline icon"></i>Account</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- SMALL MENU ENDS -->
+
+        <!-- LARGE MENU START -->
+        <!-- .ui.secondary.inverted.white.massive.menu#large-menu>.ui.container>.left.menu>.item -->
+        <div class="ui segment medium stackable menu" id="large-menu"
+            style="padding: 0 !important; margin: 0 !important;">
+            <div class="ui container">
+                <div class="left menu">
+                    <div class="item"><i class="handshake inverted olive icon huge"></i></div>
+                </div>
+                <!-- <div class="ui container">
+                            
+                            
+                        </div> -->
+
+                <div class="item">
+                    <div class="ui action input">
+                        <input type="text" placeholder="Search...">
+                        <select class="ui compact selection dropdown">
+                            <option selected="" value="articles">Couftan</option>
+                            <option value="products">Boubou</option>
+                            <option value="all">Chossire</option>
+                            <option value="all">Autre</option>
+                        </select>
+                        <div class="ui button olive">Rechercher</div>
+                    </div>
+                </div>
+                <div class="right menu">
+
+                    <div class="item"><i class="sign in alternate icon"></i>
+                        <button class="ui left attached button"><a href="login.html">Se Connecter</a></button>
+                        <button class="right attached ui button"><a href="register.html">Registre</a></button>
+                    </div>
+                      <div class="item">
+                        <img src="img/logo.jpg">
+                      </div>
+                    <div class="item"><a href="chekout.html"><i class="cart plus icon"></i><span id="cart_count">(0)</span></a> </div>
+                </div>
+            </div>
+        </div>
+        <!-- LARGE MENU ENDS -->
+        <br><br>
+        <!-- CARD START -->
+        <div class="ui container">
+            <div class="ui horizontal divider">Couftan Marocaine</div>
+            <br><br>
+
+
+            <div class="ui grid">
+                <div class="doubling two column row">
+                    <div class="column">
+                        <div class="ui special one doubling cards">
+                            <div class="olive fluid card">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <div class="center">
+                                                <div class="ui inverted button" onclick="addToCart(100, 'Caftan Marocain', 'img/caftan marocain.jpg')">Ajouter au Panier</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="ui fluid image" src="img/caftan marocain.jpg">
+                                </div>
+                                <div class="content">
+                                    <i class="ma"></i>
+                                    <a class="header">Caftan Marocain</a>
+                                    <div class="meta">
+                                        <span class="date">Premier qualiter</span>
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <a>
+                                        <i class="dollar icon"></i>
+                                        100 DH
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                            <div class="ui three doubling special cards">
+                                    <div class="olive fluid card">
+                                        <div class="blurring dimmable image">
+                                            <div class="ui dimmer">
+                                                <div class="content">
+                                                    <div class="center">
+                                                        <div class="ui inverted button" onclick="addToCart(200, 'petite robe', 'img/rob4.jpg')">Ajouter au Panier</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img class="ui fluid image" src="img/rob4.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <a class="header">petite robe</a>
+                                            <div class="meta">
+                                                <span class="date">Premier qualiter</span>
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <a>
+                                                <i class="dollar icon"></i>
+                                                200 DH
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="olive fluid card">
+                                        <div class="blurring dimmable image">
+                                            <div class="ui dimmer">
+                                                <div class="content">
+                                                    <div class="center">
+                                                        <div class="ui inverted button" onclick="addToCart(350, 'robe', 'img/rob5.jpg')">Ajouter au Panier</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img class="ui fluid image" src="img/rob5.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <a class="header">robe</a>
+                                            <div class="meta">
+                                                <span class="date">Premier qualiter</span>
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <a>
+                                                <i class="dollar icon"></i>
+                                                350 DH
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="olive fluid card">
+                                        <div class="blurring dimmable image">
+                                            <div class="ui dimmer">
+                                                <div class="content">
+                                                    <div class="center">
+                                                        <div class="ui inverted button"onclick="addToCart(350, 'couton robe', 'img/rob1.jpg')">Ajouter au Panier</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img class="ui fluid image" src="img/rob1.jpg">
+                                        </div>
+                                        <div class="content">
+                                            <a class="header">couton robe</a>
+                                            <div class="meta">
+                                                <span class="date">Premier qualiter</span>
+                                            </div>
+                                        </div>
+                                        <div class="extra content">
+                                            <a>
+                                                <i class="dollar icon"></i>
+                                                350 DH
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui three doubling special cards">
+                                        <div class="olive fluid card">
+                                            <div class="blurring dimmable image">
+                                                <div class="ui dimmer">
+                                                    <div class="content">
+                                                        <div class="center">
+                                                            <div class="ui inverted button" onclick="addToCart(180, 'bleu robe', 'img/téléchargement.jpg')">Ajouter au Panier</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img class="ui fluid image" src="img/téléchargement.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <a class="header">bleu robe</a>
+                                                <div class="meta">
+                                                    <span class="date">Premier qualiter</span>
+                                                </div>
+                                            </div>
+                                            <div class="extra content">
+                                                <a>
+                                                    <i class="dollar icon"></i>
+                                                    180 DH
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="olive fluid card">
+                                            <div class="blurring dimmable image">
+                                                <div class="ui dimmer">
+                                                    <div class="content">
+                                                        <div class="center">
+                                                            <div class="ui inverted button" onclick="addToCart(400, 'Jolie Robe', 'img/images (10)')">Ajouter au Panier</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img class="ui fluid image" src="img/images (10).jpg">
+                                            </div>
+                                            <div class="content">
+                                                <a class="header">Jolie Robe</a>
+                                                <div class="meta">
+                                                    <span class="date">Premier qualiter</span>
+                                                </div>
+                                            </div>
+                                            <div class="extra content">
+                                                <a>
+                                                    <i class="dollar icon"></i>
+                                                    400 DH
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="olive fluid card">
+                                            <div class="blurring dimmable image">
+                                                <div class="ui dimmer">
+                                                    <div class="content">
+                                                        <div class="center">
+                                                            <div class="ui inverted button" onclick="addToCart(250, 'Quoftan bleu', 'img/rob2.jpg')">Ajouter au Panier</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img class="ui fluid image" src="img/rob2.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <a class="header">Quoftan bleu</a>
+                                                <div class="meta">
+                                                    <span class="date">Premier qualiter</span>
+                                                </div>
+                                            </div>
+                                            <div class="extra content">
+                                                <a>
+                                                    <i class="Dollar icon"></i>
+
+                                                    250 DH
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD  ENDS  -->
+
+
+        <br><br>
+        <!-- PRODUCT START -->
+        <div class="ui container">
+            <div class="ui horizontal divider">Chossure Marocaine</div>
+            <br><br>
+            <div class="ui four doubling special cards">
+                    <div class="olive fluid card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui inverted button"onclick="addToCart(300, 'Chossure', 'img/images (13).jpg')">Ajouter au Panier</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="ui fluid image" src="img/images (13).jpg">
+                            </div>
+                            <div class="content">
+                                <a class="header">Chossure</a>
+                                <div class="meta">
+                                    <span class="date">Modelle 2023</span>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="dollar icon"></i>
+                                    30 DH
+                                </a>
+                            </div>
+                        </div>
+                <div class="olive fluid card">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button" onclick="addToCart(100, 'Chossure quire', 'img/choss3.jpg')">Ajouter au Panier</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="ui fluid image" src="img/choss3.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Chossure quire</a>
+                        <div class="meta">
+                            <span class="date">Premiere qualiter</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="dollar icon"></i>
+                            100 DH
+                        </a>
+                    </div>
+                </div>
+                <div class="olive fluid card">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button" onclick="addToCart(250, 'Caisse chossure', 'img/téléchargement (2).jpg')">Ajouter au Panier</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="ui fluid image" src="img/téléchargement (2).jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Caisse chossure</a>
+                        <div class="meta">
+                            <span class="date">Modelle 2023</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="dollar icon"></i>
+                            20 DH
+                        </a>
+                    </div>
+                </div>
+                <div class="olive fluid card">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button" onclick="addToCart(180, 'Nauveau Chossure', 'img/choss2.jpg')">Ajouter au Panier</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="ui fluid image" src="img/choss2.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Nauveau Chossure</a>
+                        <div class="meta">
+                            <span class="date">Prmeier qualiter</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="dollar icon"></i>
+                            180 DH
+                        </a>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="ui horizontal divider">Boubou Tradutionnel Marocaine</div><br><br>
+            <div class="ui four doubling special cards">
+                    <div class="olive fluid card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui inverted button" onclick="addToCart(190, 'oubou Marocain', 'img/rob3.jpg')">Ajouter au Panier</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="ui fluid image" src="img/rob3.jpg">
+                            </div>
+                            <div class="content">
+                                <a class="header">Boubou Marocain</a>
+                                <div class="meta">
+                                    <span class="date">Mdelle 2023</span>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="dollar icon"></i>
+                                190 DH
+                                </a>
+                            </div>
+                        </div>
+                    <div class="olive fluid card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui inverted button" onclick="addToCart(150, 'Boubou Couton', 'img/images (15).jpg')">Ajouter au Panier</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="img/images (15).jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Boubou Couton</a>
+                            <div class="meta">
+                                <span class="date">Premiere qualiter</span>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a>
+                                <i class="dollar icon"></i>
+                                150 DH
+                            </a>
+                        </div>
+                    </div>
+                    <div class="olive fluid card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui inverted button" onclick="addToCart(200, 'Tradutionnel Boubou', 'img/images (15).jpg')">Ajouter au Panier</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="img/images (15).jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Tradutionnel Boubou</a>
+                            <div class="meta">
+                                <span class="date">Modelle 2023</span>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a>
+                                <i class="dollar icon"></i>
+                             200 DH
+                            </a>
+                        </div>
+                    </div>
+                    <div class="olive fluid card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui inverted button" onclick="addToCart(199, 'Noir style boubou', 'img/c.jpg')">Ajouter au Panier</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="ui fluid image" src="img/c.jpg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Noir style boubou</a>
+                            <div class="meta">
+                                <span class="date">Modelle 2023</span>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a>
+                                <i class="dollar icon"></i>
+                                199 DH
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT ENDS -->
+
+
+
+        <br><br>
+
+        <!-- FOOTER START -->
+        <div class="ui inverted black vertical footer segment">
+                <div class="ui center aligned container">
+                  <div class="ui stackable inverted divided grid">
+                    
+                    <div class="column">
+                      <h4 class="ui inverted header">Copyright © 2023 <copyright holders> - Brahim Rabany & Mohamed Saleh Sidi Ely - Tous droits réservés</h4>
+                        <button class="ui circular facebook icon button">
+                        <i class="facebook icon"></i>
+                          
+                        </button>
+                        <button class="ui circular twitter icon button">
+                          <i class="twitter icon"></i>
+                        </button>
+                        <button class="ui circular linkedin icon button">
+                        <i class="linkedin icon"></i>
+                          
+                        </button>
+                        <button class="ui circular google plus icon button">
+                          <i class="google plus icon"></i>
+                        </button>
+                                         
+                    </div>
+                  </div>
+                  <div class="ui inverted section divider"></div>
+                  <div class="ui horizontal inverted small divided link list">
+                    <a class="item" href="#">Resource</a>
+                    <a class="item" href="#">Contact Us</a>
+                    <a class="item" href="#">Terms and Conditions</a>
+                    <a class="item" href="#">Privacy Policy</a>
+                  </div>
+                </div>
+              </div>
+        <!-- FOOTER ENDS  -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        if (!localStorage.cart_number) {
+            localStorage.setItem("cart_number", "0");
+        }
+        function addToCart(montant, nom, img){
+            console.log(montant + nom);
+            let cart_number = Number(localStorage.getItem("cart_number")) + 1;
+
+            localStorage.setItem("product_"+cart_number, nom);
+            localStorage.setItem("price_"+cart_number, montant);
+            localStorage.setItem("img_"+cart_number, img);
+            localStorage.cart_number = Number(localStorage.cart_number) + 1;
+            document.getElementById('cart_count').innerHTML = `(${cart_number})`
+
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
