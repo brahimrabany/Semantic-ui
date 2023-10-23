@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MorroZon</title>
+    <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  <style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+   <script>
+  $(document)
+    .ready(function() {
+      $('.ui.form')
+        .form({
+          fields: {
+            email: {
+              identifier  : 'email',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your e-mail'
+                },
+                {
+                  type   : 'email',
+                  prompt : 'Please enter a valid e-mail'
+                }
+              ]
+            },
+            password: {
+              identifier  : 'password',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your password'
+                },
+                {
+                  type   : 'length[6]',
+                  prompt : 'Your password must be at least 6 characters'
+                }
+              ]
+            }
+          }
+        })
+      ;
+    })
+  ;
+  </script>
+<body>
+  <!-- .site>.ui.menu.mini.inverted.black>.ui.container>.left.menu>.item*2>a -->
+    <div class="site">
+        <!-- SMALL MENU BEGAIN -->
+        <div class="ui stackable menu mini inverted black" id="small-menu"
+            style="padding: 0 !important; margin: 0 !important;">
+            <div class="ui container">
+                <div class="left menu">
+                    <div class="item"><a href="#"> <i class="phone volume icon"></i> +0778951080</a></div>
+                    <div class="item"><a href="#"><i class="clock outline icon"></i> De 9h a 21h | 7 jours sur 7</a></div>
+                </div>
+                <div class="right menu">
+                    <div class="item"><a href="index.html">Acceuil</a></div>
+                    <div class="item"><a href="#">Contact</a></div>
+                    <div class="item"><a href="#"><i class="user outline icon"></i>Account</a></div>
+                </div>
+            </div>
+        </div>
+         <!-- SMALL MENU ENDS -->
+
+        <!-- LARGE MENU START -->
+        <!-- .ui.secondary.inverted.white.massive.menu#large-menu>.ui.container>.left.menu>.item -->
+
+        <div class="ui segment medium stackable menu" id="large-menu"
+            style="padding: 0 !important; margin: 0 !important;">
+            <div class="ui container">
+                <div class="left menu">
+                    <div class="item"><i class="handshake inverted olive icon huge"></i></div>
+                </div>
+                <!-- <div class="ui container">
+                            
+                            
+                        </div> -->
+
+                <div class="item">
+                    <div class="ui action input">
+                        <input type="text" placeholder="Search...">
+                        <select class="ui compact selection dropdown">
+                            <option selected="" value="articles">Vetement</option>
+                            <option value="products">Phone</option>
+                            <option value="all">Meuble</option>
+                            <option value="all">Autre</option>
+                        </select>
+                        <div class="ui button olive">Rechercher</div>
+                    </div>
+                </div>
+                <div class="right menu">
+
+                    <div class="item"><i class="sign in alternate icon"></i>
+                        <button class="ui left attached button"><a href="login.html">Log in</a></button>
+                        <button class="right attached ui button">Sing in</button>
+                    </div>
+                      <div class="item">
+                        <img src="img/logo.jpg">
+                      </div>
+                    <div class="item"><i class="cart plus icon"></i><a href="#">(0)</a> </div>
+                </div>
+            </div>
+        </div>
+        <!-- LARGE MENU ENDS -->
+      <div class="ui container">
+
+      		<br><br>
+			<div class="ui middle aligned center aligned grid">
+			  <div class="column">
+			    <h2 class="ui teal image header">
+			      <img src="img/logo.jpg" class="image">
+			      <div class="content">
+			        Creér un compte
+			      </div>
+			    </h2>
+			    <form class="ui large form">
+			      <div class="ui stacked segment">
+			        <div class="field">
+			          <div class="ui left icon input">
+			            <i class="user icon"></i>
+			            <input type="text" name="email" placeholder="E-mail address">
+			          </div>
+			        </div>
+              <div class="field">
+                <div class="ui left icon input">
+                  <i class="user icon"></i>
+                  <input type="text" name="name" placeholder="full name">
+                </div>
+              </div>
+			        <div class="field">
+			          <div class="ui left icon input">
+			            <i class="lock icon"></i>
+			            <input type="password" name="password" placeholder="Password">
+			          </div>
+			        </div>
+              <div class="field">
+                <div class="ui left icon input">
+                  <i class="lock icon"></i>
+                  <input type="password" name="passwor2d" placeholder="Repeat Password">
+                </div>
+              </div>
+			        <div class="ui fluid large teal submit button">Registre</div>
+			      </div>
+
+			      <div class="ui error message"></div>
+
+			    </form>
+
+			    <div class="ui message">
+			      Vous avez deja un compte ? <a href="login.html">Se Connnecter</a>
+			    </div>
+			  </div>
+			</div>
+			</div>
+
+</body>
+</html>
